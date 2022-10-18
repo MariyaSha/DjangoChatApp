@@ -1,0 +1,244 @@
+ /* INDEX.HTML */
+
+body {
+	background-color: #0D5962;
+	text-align: center;
+	font-family: 'Shanti', sans-serif;
+	}
+
+img {
+	padding-top: 30px;
+	width:  300px;
+}
+
+#main_form_area {
+	background-color: #157f84;
+	padding: 30px;
+	margin:  30px;
+	width: 50%;
+	position: relative;
+	left: 21%;
+	border-radius: 30px;
+	box-shadow: #062A2E 0px 8px 25px 0px;
+}
+
+#main_form_area input {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Shanti', sans-serif;
+	border: none;
+	border-radius: 15px;
+	padding:  5px;
+	margin:  5px;
+	width:  250px;
+}
+
+#main_form_area input:hover, #login_form input:focus {
+	box-shadow: #062A2E 0px 5px 15px;
+}
+
+#main_form_area label {
+	color:  white;
+}
+
+#main_form_area #submit_button {
+	background-color: #B74171;
+	color:  white;
+	padding:  5px;
+	width:  260px;
+	margin:  15px;
+	cursor: pointer;
+	border:  2px solid white;
+	box-shadow: #062A2E 0px 2px 5px 0px;
+}
+
+#main_form_area #submit_button:hover {
+	background-color: #AD0045;
+	box-shadow: #062A2E 0px 5px 15px;
+}
+
+#main_form_area p {
+	color:  white;
+}
+
+#footer_area {
+	color: white;
+}
+
+#footer_area input, #footer_area button {
+	background-color: #B7DBDC;
+	padding:  5px 40px;
+	border: none;
+	border-radius: 15px;
+	font-size: 1.2em;
+	font-family: 'Shanti', sans-serif;
+	cursor: pointer;
+}
+
+#footer_area input:hover, #footer_area button:hover {
+	background-color: #F9F7B7;
+	box-shadow: #062A2E 0px 5px 15px;
+}
+
+
+ /* CHAT.HTML */
+
+#header_area p {
+	color: white;
+	font-size: 1.2em;
+}
+
+#message_board {
+	height: 450px; 
+	width:  75%;
+	overflow-y: scroll;
+	background-color: #5EAAAA;
+	position: relative; 
+	left:  13%;
+	border-radius: 20px;
+	box-shadow: #062A2E 0px 3px 25px 0px;
+}
+
+.chat_message {
+	background-color: #157F84;
+	border-radius: 15px;
+	color: white; 
+	margin:  5px 15px;
+}
+
+.my_chat_message {
+	background-color: #B7DBDC;
+	border-radius: 15px;
+	color: black; 
+	margin:  5px 15px;
+}
+
+.chat_message div {
+	background-color: #0D5962;
+	border-radius: 12px;
+	margin: 10px 0;
+	padding:  15px;
+}
+
+.my_chat_message div {
+	background-color: #0D5962;
+	color:  white;
+	border-radius: 12px;
+	margin: 10px 0;
+	padding:  15px;
+}
+
+.chat_message p, .my_chat_message p {
+	margin-top:  8px;
+	margin-bottom:  8px;
+}
+
+.msg_time {
+	color: white;
+	float: right;
+	position: relative;
+	bottom: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 1.1em;
+}
+
+.msg_name {
+	color: #FCF6B6;
+	padding: 0 20px;
+	display:  inline;
+	float:  left;
+	position: relative;
+	bottom: 10px;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	font-size: 1.1em;
+}
+
+.my_chat_message .msg_name {
+	color: white;
+}
+
+.message_form {
+	display: inline;
+}
+
+.message_form #user_message {
+	width: 60%;
+	padding: 8px;
+	margin: 28px;
+	border:  none;
+	border-radius: 20px;
+	float:  left;
+	position: relative;
+	left: 13%;
+	background-color: #B7DBDC;
+	font-size: 1.2em;
+	font-family: 'Shanti', sans-serif;
+	text-align: center;
+}
+
+.message_form #send_button {
+	font-size: 1.2em;
+	padding:  8px 30px;
+	border:  none;
+	border: 2px solid white;
+	border-radius: 20px;
+	font-family: 'Shanti', sans-serif;
+	background-color: #B74171;
+	color: white;
+	cursor: pointer;
+	box-shadow: #062A2E 0px 2px 5px 0px;
+}
+
+.message_form #send_button:hover {
+	background-color: #CF6A85;
+	box-shadow: #062A2E 0px 5px 15px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #B7DBDC;
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #B84171; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #CF6A85; 
+}
+
+/* SIGNUP.HTML */
+
+#signup_form #signup_button {
+	background-color: #CF6A85;
+	color:  white;
+	padding:  5px;
+	width:  260px;
+	margin:  15px;
+	cursor: pointer;
+}
+
+#signup_form #signup_button:hover {
+	background-color: #B74171;
+}
+
+#signup_form input {
+	text-align: center;
+	font-size: 1.2em;
+	font-family: 'Shanti', sans-serif;
+	border: none;
+	border-radius: 15px;
+	padding:  5px;
+	margin:  5px;
+	width:  250px;
+}
+
