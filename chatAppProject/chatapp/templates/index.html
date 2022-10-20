@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Chat App</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css'%}">
+	<! -- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Shanti&family=Ubuntu+Condensed&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- logo area -->
+	<div id="header_area">
+		<img src="{% static 'assets/logo_white.png'%}">
+	</div>
+	<div id="main_form_area">
+		<form action="/chatapp/login/" method="post">
+			{% csrf_token %}
+			<label for="user">username</label>
+			<br>
+			<input type="text" id="user" name="user"><br><br>
+			<label for="password">password</label>
+			<br>
+			<input type="password" id="password" name="password"><br><br>
+			<input id="submit_button" type="submit" value="log in">
+		</form> 
+		{% if notice %}
+			<p>{{ notice }}<br>{{ action }}</p>
+		{% endif %}
+	</div>
+	<div id="footer_area">
+		<form action="/chatapp/sign_up/">
+			<label>you do not have an account yet?</label>
+			<br>
+			<br>
+		    <input type="submit" value="sign up"/>
+		</form>
+	</div>
+
+	<script type="text/javascript" src="{% static 'js/script.js'%}"></script>
+</body>
+</html>
