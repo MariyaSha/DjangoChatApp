@@ -1,4 +1,6 @@
- /* INDEX.HTML */
+/* ------------------------------ */
+/* INDEX.HTML */
+/* ------------------------------ */
 
 body {
 	background-color: #0D5962;
@@ -80,8 +82,9 @@ img {
 	box-shadow: #062A2E 0px 5px 15px;
 }
 
-
- /* CHAT.HTML */
+/* ------------------------------ */
+/* CHAT.HTML */
+/* ------------------------------ */
 
 #header_area p {
 	color: white;
@@ -90,30 +93,33 @@ img {
 
 #message_board {
 	height: 450px; 
-	width:  75%;
+	width:  65%;
 	overflow-y: scroll;
 	background-color: #5EAAAA;
 	position: relative; 
-	left:  13%;
+	left:  18%;
 	border-radius: 20px;
 	box-shadow: #062A2E 0px 3px 25px 0px;
 }
 
-.chat_message {
+.chat_message, .my_chat_message {
 	background-color: #157F84;
 	border-radius: 15px;
 	color: white; 
 	margin:  5px 15px;
+	width:  55%;
+	text-align: left;
+	position: relative; 
+	left: 0%;
 }
 
 .my_chat_message {
 	background-color: #B7DBDC;
-	border-radius: 15px;
 	color: black; 
-	margin:  5px 15px;
+	left: 42.5%;
 }
 
-.chat_message div {
+.chat_message div, .my_chat_message div {
 	background-color: #0D5962;
 	border-radius: 12px;
 	margin: 10px 0;
@@ -121,16 +127,15 @@ img {
 }
 
 .my_chat_message div {
-	background-color: #0D5962;
+	background-color: #B74171;
 	color:  white;
-	border-radius: 12px;
-	margin: 10px 0;
-	padding:  15px;
 }
 
 .chat_message p, .my_chat_message p {
 	margin-top:  8px;
 	margin-bottom:  8px;
+	/* t  right b  left*/
+	padding:  10px 0 15px 35px;
 }
 
 .msg_time {
@@ -138,8 +143,9 @@ img {
 	float: right;
 	position: relative;
 	bottom: 10px;
+	padding-right: 25px;
 	font-family: 'Ubuntu Condensed', sans-serif;
-	font-size: 1.1em;
+	font-size: 0.75em;
 }
 
 .msg_name {
@@ -148,7 +154,7 @@ img {
 	display:  inline;
 	float:  left;
 	position: relative;
-	bottom: 10px;
+	bottom: 14px;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 1.1em;
 }
@@ -194,18 +200,18 @@ img {
 	box-shadow: #062A2E 0px 5px 15px;
 }
 
-/* width */
+/* scroll width */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
-/* Track */
+/* scroll track */
 ::-webkit-scrollbar-track {
   background: #B7DBDC;
   border-radius: 10px;
 }
  
-/* Handle */
+/* scroll handle */
 ::-webkit-scrollbar-thumb {
   background: #B84171; 
   border-radius: 10px;
@@ -216,7 +222,9 @@ img {
   background: #CF6A85; 
 }
 
+/* ------------------------------ */
 /* SIGNUP.HTML */
+/* ------------------------------ */
 
 #signup_form #signup_button {
 	background-color: #CF6A85;

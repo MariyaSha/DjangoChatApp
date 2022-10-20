@@ -17,16 +17,18 @@
 	</div>
 	<div id="main_form_area">
 		<form action="/myapp/login/" method="post">
-		{% csrf_token %}
-		<label for="user">username</label>
-		<br>
-		<input type="text" id="user" name="user"><br><br>
-		<label for="password">password</label>
-		<br>
-		<input type="password" id="password" name="password"><br><br>
-		<input id="submit_button" type="submit" value="log in">
+			{% csrf_token %}
+			<label for="user">username</label>
+			<br>
+			<input type="text" id="user" name="user"><br><br>
+			<label for="password">password</label>
+			<br>
+			<input type="password" id="password" name="password"><br><br>
+			<input id="submit_button" type="submit" value="log in">
 		</form> 
-		<p>{{ notice }}</p>
+		{% if notice %}
+			<p>{{ notice }}<br>{{ action }}</p>
+		{% endif %}
 	</div>
 	<div id="footer_area">
 		<form action="/myapp/sign_up/">

@@ -13,7 +13,9 @@
 <body>
 	<!-- logo area -->
 	<div id="header_area">
-		<img src="{% static 'assets/logo_white.png'%}">
+		<a href="../">
+			<img src="{% static 'assets/logo_white.png'%}">
+		</a>
 		<p>welcome back {{ user.name }}!</p>
 	</div>		
 	<div id="message_board">
@@ -37,12 +39,13 @@
 	<div class="message_form">
 		<form action="/myapp/send_chat/" method="post">
 		{% csrf_token %}
-		<input type="text" id="user_message" name="msg">
+		<input type="text" id="user_message" name="msg" maxlength="250">
 		<br>
 		<input type="submit" id="send_button" value="send">
 		<input type="text" name="user_name" value="{{ user.name }}" style="display: none;">
 		</form> 
 	</div>	
+	<div id="bottom_of_chat"></div>
 	<script type="text/javascript" src="{% static 'js/script.js'%}"></script>
 </body>
 </html>
