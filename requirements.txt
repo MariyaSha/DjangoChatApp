@@ -5,6 +5,7 @@ asgiref=3.4.1=pyhd3eb1b0_0
 ca-certificates=2022.4.26=haa95532_0
 certifi=2022.6.15=py39haa95532_0
 django=3.2.5=pyhd3eb1b0_0
+gunicorn=20.1.0=pypi_0
 libpq=12.9=hb652d5d_3
 openssl=1.1.1o=h2bbff1b_0
 pip=22.1.2=py39haa95532_0
