@@ -19,7 +19,7 @@ img {
 	margin:  30px;
 	width: 50%;
 	position: relative;
-	left: 21%;
+	left: 22%;
 	border-radius: 30px;
 	box-shadow: #062A2E 0px 8px 25px 0px;
 }
@@ -92,7 +92,7 @@ img {
 }
 
 #message_board {
-	height: 450px; 
+	max-height:  600px; 
 	width:  65%;
 	overflow-y: scroll;
 	background-color: #5EAAAA;
@@ -142,7 +142,7 @@ img {
 	color: white;
 	float: right;
 	position: relative;
-	bottom: 10px;
+	bottom: 8px;
 	padding-right: 25px;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 0.75em;
@@ -154,7 +154,7 @@ img {
 	display:  inline;
 	float:  left;
 	position: relative;
-	bottom: 14px;
+	bottom: 12px;
 	font-family: 'Ubuntu Condensed', sans-serif;
 	font-size: 1.1em;
 }
@@ -170,12 +170,12 @@ img {
 .message_form #user_message {
 	width: 60%;
 	padding: 8px;
-	margin: 28px;
+	margin: 25px;
 	border:  none;
 	border-radius: 20px;
 	float:  left;
 	position: relative;
-	left: 13%;
+	left: 16%;
 	background-color: #B7DBDC;
 	font-size: 1.2em;
 	font-family: 'Shanti', sans-serif;
