@@ -1,7 +1,8 @@
 # DjangoChatApp
 Simple Chat App with Django and Sqlite
 
-Coming soon...
+in progress...
+<br>
 <br>
 ![GH_screenshot1](https://user-images.githubusercontent.com/32107652/197233928-1f0234b2-576d-4eb5-9f97-dc6637c62a0a.jpg)
 <br>
