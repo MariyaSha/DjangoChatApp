@@ -38,7 +38,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['thechatapp.online']
+ALLOWED_HOSTS = ['thechatapp.online', '140.82.121.3']
 
 # ******************************************
 
